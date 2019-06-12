@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Begin Head -->
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Aeternity Ekiti</title>
+  <meta name="title" content="Aeternity Ekiti">
+  <meta name="keywords" content="emmanueljet, Ekiti State University, Technical Club, Aeternity, Students, Community, Developers"
+  />
+  <meta name="description" content="We are a group of developers, writers, digital designers & entrepreneurs interested in learning about and developing solutions using æternity technologies, based in Ado-Ekiti, Ekiti State, Nigeria">
+  <meta name="author" content="Emmanuel Joseph (Jet) - Aeternity Ekiti">
+
+  <!-- Google -->
+  <meta itemprop="name" content="Aeternity Ekiti">
+  <meta itemprop="description" content="We are a group of developers, writers, digital designers & entrepreneurs interested in learning about and developing solutions using æternity technologies, based in Ado-Ekiti, Ekiti State, Nigeria">
+  <meta itemprop="image" content="https://aeternity-ekiti.web.app/img/aeternity.png">
+
+  <!-- Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aeternityekiti.web.app" />
+  <meta property="og:title" content="Aeternity Ekiti" />
+  <meta property="og:description" content="We are a group of developers, writers, digital designers & entrepreneurs interested in learning about and developing solutions using æternity technologies, based in Ado-Ekiti, Ekiti State, Nigeria" />
+  <meta property="og:image" content="https://aeternity-ekiti.web.app/img/aeternity.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://aeternity-ekiti.web.app">
+  <meta name="twitter:title" content="Aeternity Ekiti">
+  <meta name="twitter:description" content="We are a group of developers, writers, digital designers & entrepreneurs interested in learning about and developing solutions using æternity technologies, based in Ado-Ekiti, Ekiti State, Nigeria">
+  <meta name="twitter:image:src" content="https://aeternity-ekiti.web.app/img/aeternity.png">
+  <meta name="twitter:creator" content="https://twitter.com/AeternityEkiti">
+
+  <!-- Web Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Vendor Styles -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="css/animate.css" rel="stylesheet" type="text/css" />
+  <link href="vendor/themify/themify.css" rel="stylesheet" type="text/css" />
+  <link href="vendor/scrollbar/scrollbar.min.css" rel="stylesheet" type="text/css" />
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" />
+  <link href="vendor/swiper/swiper.min.css" rel="stylesheet" type="text/css" />
+  <link href="vendor/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" type="text/css" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <!-- Theme Styles -->
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="css/global/global.css" rel="stylesheet" type="text/css" />
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/6.1.1/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/6.1.1/firebase-auth.js"></script>
+  <script defer src="/__/firebase/6.1.1/firebase-firestore.js"></script>
+  <script defer src="/__/firebase/6.1.1/firebase-database.js"></script>
+  <script defer src="/__/firebase/6.1.1/firebase-messaging.js"></script>
+  <script defer src="/__/firebase/6.1.1/firebase-storage.js"></script>
+  <!-- initialize the SDK after all desired features are loaded -->
+  <script defer src="/__/firebase/init.js"></script>
+</head>
+<!-- End Head -->
+
+<!-- Body -->
+
+<body>
+  <!-- for event advart add onload="event_advertisement()" to body tag -->
+
+  <!--========== Event Advertisement ==========-->
+  <!-- <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+            <img src="event/e.jpg" class="img-fluid" style="width:100%; height: 75vh;">
+          <div class="modal-footer">
+            <a class="btn btn-sm btn-primary" href="" target="_blank">Register</a>
+            <button type="button" class="btn btn-sm btn-primary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!--========== HEADER ==========-->
+  <header class="s-header js__header-sticky js__header-overlay fixed-top" id="header">
+    <!-- Navbar -->
+    <div class="s-header__navbar" style="background: white;">
+      <div class="s-header__container">
+        <div class="s-header__navbar-row">
+          <div class="s-header__navbar-row-col">
+            <!-- Logo -->
+            <div class="s-header__logo">
+              <a href="index.html" class="s-header__logo-link">
+                <img class="s-header__logo-img s-header__logo-img-default" src="img/logo.png" alt="æternity ekiti logo">
+                
+                <img class="s-header__logo-img s-header__logo-img-shrink" src="img/logo.png" alt="æternity ekiti logo">
+              </a>
+            </div>
+            <!-- End Logo -->
+          </div>
+          <div class="s-header__navbar-row-col">
+            <!-- Trigger -->
+            <a href="javascript:void(0);" class="s-header__trigger s-header__trigger--dark js__trigger">
+              <span class="s-header__trigger-icon"></span>
+              <svg x="0rem" y="0rem" width="3.125rem" height="3.125rem" viewbox="0 0 54 54">
+                <circle fill="transparent" stroke="#fff" stroke-width="1" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
+              </svg>
+            </a>
+            <!-- End Trigger -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Navbar -->
+    <!-- Overlay -->
+    <div class="s-header-bg-overlay js__bg-overlay" id="over-lay">
+      <!-- Nav -->
+      <nav class="s-header__nav js__scrollbar">
+        <div class="container-fluid">
+          <!-- Menu List -->
+          <ul class="list-unstyled s-header__nav-menu" id="menu-main">
+            <li class="s-header__nav-menu-item js__trigger">
+              <a class="s-header__nav-menu-link s-header__nav-menu-link-divider -is-active" href="#home">Home</a>
+            </li>
+            <li class="s-header__nav-menu-item js__trigger">
+              <a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="#about">About</a>
+            </li>
+            <li class="s-header__nav-menu-item js__trigger">
+              <a class="s-header__nav-menu-link s-header__nav-menu-link-divider " href="#projects">Projects</a>
+            </li>
+            <li class="s-header__nav-menu-item js__trigger">
+              <a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="#blog">Blog</a>
+            </li>
+            <li class="s-header__nav-menu-item js__trigger">
+              <a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="#contact">Contacts</a>
+            </li>
+          </ul>
+          <!-- End Menu List -->
+
+          <!-- Menu List -->
+          <ul class="list-unstyled s-header__nav-menu">
+            <li class="s-header__nav-menu-item">
+              <a class="s-header__nav-menu-link s-header__nav-menu-link-divider -is-active" href="#">Important Links</a>
+            </li>
+            <li class="s-header__nav-menu-item">
+              <a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="https://github.com/AeternityEkiti/Aeternity-Development-101/tree/master/emmanuelJet_">EKSU Payment</a>
+            </li>
+            <li class="s-header__nav-menu-item">
+              <a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href=""></a>
+            </li>
+            <li class="s-header__nav-menu-item">
+              <a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href=""></a>
+            </li>
+            <li class="s-header__nav-menu-item">
+              <a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href=""></a>
+            </li>
+            <li class="s-header__nav-menu-item">
+              <a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href=""></a>
+            </li>
+            <li class="s-header__nav-menu-item">
+              <a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href=""></a>
+            </li>
+          </ul>
+          <!-- End Menu List -->
+        </div>
+      </nav>
+      <!-- End Nav -->
+      <!-- Action -->
+      <ul class="list-inline s-header__action s-header__action--lb">
+        <li class="s-header__action-item">
+          <a class="s-header__action-link -is-active" href="#">En</a>
+        </li>
+      </ul>
+      <!-- End Action -->
+      <!-- Action -->
+      <ul class="list-inline s-header__action s-header__action--rb">
+        <li class="list-inline-item s-header__action-item">
+          <a class="s-header__action-link" href="https://forum.aeternity.com/u/aeternityekiti" target="_blank">
+            <i><img src="favicon/favicon-16x16.png"></i>
+            <span class="g-display-none--xs g-display-inline-block--sm">æternity forum</span>
+          </a>
+        </li>
+        <li class="list-inline-item s-header__action-item">
+          <a class="s-header__action-link" href="https://github.com/AeternityEkiti" target="_blank">
+            <i class="fa fa-github"></i>
+            <span class="g-display-none--xs g-display-inline-block--sm">github</span>
+          </a>
+        </li>
+        <li class="list-inline-item s-header__action-item">
+          <a class="s-header__action-link" href="https://twitter.com/AeternityEkiti" target="_blank">
+            <i class="fa fa-twitter"></i>
+            <span class="g-display-none--xs g-display-inline-block--sm">twitter</span>
+          </a>
+        </li>
+        <li class="list-inline-item s-header__action-item">
+          <a class="s-header__action-link" href="https://t.me/joinchat/LHm-UE63UDgw30JmU8EIXQ" target="_blank">
+            <i class="fa fa-telegram"></i>
+            <span class="g-display-none--xs g-display-inline-block--sm">telegram</span>
+          </a>
+        </li>
+        <li class="list-inline-item s-header__action-item">
+          <a class="s-header__action-link" href="https://medium.com/@aeternityekiti" target="_blank">
+            <i class="fa fa-medium"></i>
+            <span class="g-display-none--xs g-display-inline-block--sm">medium</span>
+          </a>
+        </li>
+        <li class="list-inline-item s-header__action-item">
+          <a class="s-header__action-link" href="https://www.facebook.com/aeternityekiti/" target="_blank">
+            <i class="fa fa-facebook-official"></i>
+            <span class="g-display-none--xs g-display-inline-block--sm">facebook</span>
+          </a>
+        </li>
+      </ul>
+      <!-- End Action -->
+    </div>
+    <!-- End Overlay -->
+  </header>
+  <!--========== END HEADER ==========-->
+
+  <!--========== SWIPER SLIDER ==========-->
+  <div class="s-swiper js__swiper-one-item" id="home">
+    <!-- Swiper Wrapper -->
+    <div class="swiper-wrapper">
+      <div class="g-fullheight--xs g-bg-position--center swiper-slide" style="background: url('img/banner/bg.jpg');">
+        <div class="container g-text-center--xs g-ver-center--xs">
+          <div class="g-margin-b-30--xs">
+            <h1 class="g-font-size-35--xs g-font-size-45--sm g-font-size-55--md g-color--primary">Collaborate,<br>Share &amp; Learn.</h1>
+          </div>
+        </div>
+      </div>
+      <div class="g-fullheight--xs g-bg-position--center swiper-slide" style="background: url('img/banner/bg1.jpg');">
+        <div class="container g-text-center--xs g-ver-center--xs">
+          <div class="g-margin-b-30--xs">
+            <div class="g-margin-b-30--xs">
+              <h2 class="g-font-size-35--xs g-font-size-45--sm g-font-size-55--md g-color--primary">Meet Amazing People</h2>
+            </div>
+            <!-- <a class="js__popup__youtube" href="https://www.youtube.com/watch?v=lcFYdgZKZxY" title="Intro Video">
+              <i class="s-icon s-icon--lg s-icon--white-bg g-radius--circle ti-control-play"></i>
+            </a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Swiper Wrapper -->
+    <!-- Arrows -->
+    <a href="javascript:void(0);" class="s-swiper__arrow-v1--right s-icon s-icon--md s-icon--primary-brd g-radius--circle ti-angle-right js__swiper-btn--next"></a>
+    <a href="javascript:void(0);" class="s-swiper__arrow-v1--left s-icon s-icon--md s-icon--primary-brd g-radius--circle ti-angle-left js__swiper-btn--prev"></a>
+    <!-- End Arrows -->
+    <a href="#js__scroll-to-section" class="s-scroll-to-section-v1--bc g-margin-b-15--xs">
+      <span class="g-font-size-18--xs g-color--primary ti-angle-double-down"></span>
+      <p class="text-uppercase g-color--primary g-letter-spacing--3 g-margin-b-0--xs">Learn More</p>
+    </a>
+  </div>
+  <!--========== END SWIPER SLIDER ==========-->
+  <!--========== PAGE CONTENT ==========-->
+  <!-- Features -->
+  <div id="js__scroll-to-section" class="container g-padding-y-80--xs g-padding-y-125--sm">
+    <div class="g-text-center--xs g-margin-b-100--xs">
+      <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-25--xs">æternity ekiti</p>
+      <h2 class="g-font-size-32--xs g-font-size-36--md">Mission &amp; Vision</h2>
+    </div>
+    <div class="row g-margin-b-60--xs g-margin-b-70--md">
+      <div class="col-sm-4 g-margin-b-60--xs g-margin-b-0--md">
+        <div class="clearfix">
+          <div class="g-media g-width-30--xs">
+            <div class="wow fadeInDown" data-wow-duration=".3" data-wow-delay=".1s">
+              <i class="g-font-size-28--xs g-color--primary ti-rocket"></i>
+            </div>
+          </div>
+          <div class="g-media__body g-padding-x-20--xs">
+            <h3 class="g-font-size-18--xs">Mission</h3>
+            <p class="g-margin-b-0--xs">
+              <div class="30">To gain and share knowledge amongst the community and beyond with the help of collaboration, sharing and learning with practical understanding.</div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 g-margin-b-60--xs g-margin-b-0--md">
+        <div class="clearfix">
+          <div class="g-media g-width-30--xs">
+            <div class="wow fadeInDown" data-wow-duration=".3" data-wow-delay=".2s">
+              <i class="g-font-size-28--xs g-color--primary ti-eye"></i>
+            </div>
+          </div>
+          <div class="g-media__body g-padding-x-20--xs">
+            <h3 class="g-font-size-18--xs">Vision</h3>
+            <p class="g-margin-b-0--xs">
+              <div class="30">Our Vision is to make an impact on the society by giving the best out of what we have, as a team. We think Big and work accordingly. Thus making stuff happen with our team effort, perseverance,and edurance.</div>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="clearfix">
+          <div class="g-media g-width-30--xs">
+            <div class="wow fadeInDown" data-wow-duration=".3" data-wow-delay=".3s">
+              <i class="g-font-size-28--xs g-color--primary ti-star"></i>
+            </div>
+          </div>
+          <div class="g-media__body g-padding-x-20--xs">
+            <h3 class="g-font-size-18--xs">Goals</h3>
+            <p class="g-margin-b-0--xs">
+              <div class="30">Build a community that uses technology in a way that makes real difference to people around us. We strive to help each other learn new technology for a better tomorrow.</div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- // end row  -->
+  </div>
+  <!-- End Features -->
+  <!-- Parallax -->
+  <div class="js__parallax-window" style="background: url(img/banner/bg2.jpg) 50% 0 no-repeat fixed;">
+    <div class="container g-text-center--xs g-padding-y-80--xs g-padding-y-125--sm">
+      <div class="g-margin-b-80--xs">
+        <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md g-color--white">WHY JOIN ÆTERNITY EKITI?</h2>
+      </div>
+      <a href="#about" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50">Learn More</a>
+    </div>
+  </div>
+  <!-- End Parallax -->
+
+  <!-- Culture -->
+  <div class="g-promo-section" id="about">
+    <div class="container g-padding-y-80--xs g-padding-y-125--sm">
+      <div class="row">
+        <div class="col-md-4 g-margin-t-15--xs g-margin-b-60--xs g-margin-b-0--lg">
+          <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-25--xs">Culture</p>
+          <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
+            <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md">about</h2>
+          </div>
+          <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".3s">
+            <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md">æternity ekiti</h2>
+          </div>
+        </div>
+        <div class="col-md-4 col-md-offset-1">
+          <p class="g-font-size-18--xs">We are a group of developers, writers, digital designers & entrepreneurs interested in learning about and developing solutions using æternity technologies, based in Ado-Ekiti, Ekiti State, Nigeria</p>
+          <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-25--xs">æternity ekiti membership benefit</p>
+          <p class="g-font-size-18--xs">Members would be introduced to æternity development 101 courses developed by <a href="https://t.me/moritz_felipe" target="_blank">Moritz Stellmacher</a> on <a href="https://dacade.org" target="_blank">dacade</a>. Gain project based work experience by identifying and solving local businesses problems using æternity technology</p>
+        </div>
+        <div class="col-md-3">
+          <img class="img-responsive" src="img/aeternity.png" alt="æternity ekiti">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Culture -->
+  <!-- Project Filter -->
+  <div class="container g-padding-y-80--xs" id="projects">
+    <div class="g-text-center--xs g-margin-b-40--xs">
+      <h2 class="g-font-size-32--xs g-font-size-36--md">Projects</h2>
+    </div>
+    <div class="s-portfolio">
+      <div id="js__filters-portfolio-gallery" class="s-portfolio__filter-v1 cbp-l-filters-text cbp-l-filters-center">
+        <div data-filter="*" class="s-portfolio__filter-v1-item cbp-filter-item cbp-filter-item-active">Show All</div>
+        <div data-filter=".web" class="s-portfolio__filter-v1-item cbp-filter-item">Web</div>
+        <div data-filter=".android" class="s-portfolio__filter-v1-item cbp-filter-item">Android</div>
+        <!-- <div data-filter=".iot" class="s-portfolio__filter-v1-item cbp-filter-item">IOT</div> -->
+      </div>
+    </div>
+  </div>
+  <!-- End Project Filter -->
+  <!-- Project Gallery -->
+  <div class="container g-margin-b-100--xs">
+    <div id="js__grid-portfolio-gallery" class="cbp">
+      <!-- Item -->
+      <div class="s-portfolio__item cbp-item web">
+        <div class="s-portfolio__img-effect">
+          <img src="img/project/eksu.png" alt="Project Image">
+        </div>
+        <div class="s-portfolio__caption-hover--cc">
+          <div class="g-margin-b-25--xs">
+            <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">EKSU Payment</h4>
+            <p class="g-color--white-opacity">by Emmanuel Joseph (Jet)</p>
+          </div>
+          <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
+            <li class="list-inline-item">
+              <a href="img/project/eksu.png" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle" data-title="EKSU Payment <br/> Emmanuel Joseph (Jet)">
+                <i class="ti-fullscreen"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/AeternityEkiti/Aeternity-Development-101/tree/master/emmanuelJet_" target="_blank" class="s-icon s-icon--sm s-icon s-icon--white-bg g-radius--circle">
+                <i class="ti-link"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Item -->
+      <div class="s-portfolio__item cbp-item android">
+        <div class="s-portfolio__img-effect">
+          <img src="img/project/coming.png" alt="Project Image">
+        </div>
+        <div class="s-portfolio__caption-hover--cc">
+          <div class="g-margin-b-25--xs">
+            <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Coming Soon</h4>
+            <p class="g-color--white-opacity">by æternity ekiti</p>
+          </div>
+          <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
+            <li class="list-inline-item">
+              <a href="img/project/coming.png" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle" data-title="Coming Soon <br/> by æternity ekiti">
+                <i class="ti-fullscreen"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="" class="s-icon s-icon--sm s-icon s-icon--white-bg g-radius--circle">
+                <i class="ti-link"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Item -->
+      <div class="s-portfolio__item cbp-item web">
+        <div class="s-portfolio__img-effect">
+          <img src="img/project/coming.png" alt="Project Image">
+        </div>
+        <div class="s-portfolio__caption-hover--cc">
+          <div class="g-margin-b-25--xs">
+            <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Coming Soon</h4>
+            <p class="g-color--white-opacity">by æternity ekiti</p>
+          </div>
+          <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
+            <li class="list-inline-item">
+              <a href="img/project/coming.png" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle" data-title="Coming Soon <br/> by æternity ekiti">
+                <i class="ti-fullscreen"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="" class="s-icon s-icon--sm s-icon s-icon--white-bg g-radius--circle">
+                <i class="ti-link"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Item -->
+      <div class="s-portfolio__item cbp-item android">
+        <div class="s-portfolio__img-effect">
+          <img src="img/project/coming.png" alt="Project Image">
+        </div>
+        <div class="s-portfolio__caption-hover--cc">
+          <div class="g-margin-b-25--xs">
+            <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Coming Soon</h4>
+            <p class="g-color--white-opacity">by æternity ekiti</p>
+          </div>
+          <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
+            <li class="list-inline-item">
+              <a href="img/project/coming.png" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle" data-title="Coming Soon <br/> by æternity ekiti">
+                <i class="ti-fullscreen"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="" class="s-icon s-icon--sm s-icon s-icon--white-bg g-radius--circle">
+                <i class="ti-link"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Item -->
+      <div class="s-portfolio__item cbp-item web">
+        <div class="s-portfolio__img-effect">
+          <img src="img/project/coming.png" alt="Project Image">
+        </div>
+        <div class="s-portfolio__caption-hover--cc">
+          <div class="g-margin-b-25--xs">
+            <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Coming Soon</h4>
+            <p class="g-color--white-opacity">by æternity ekiti</p>
+          </div>
+          <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
+            <li class="list-inline-item">
+              <a href="img/project/coming.png" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle" data-title="Coming Soon <br/> by æternity ekiti">
+                <i class="ti-fullscreen"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="" class="s-icon s-icon--sm s-icon s-icon--white-bg g-radius--circle">
+                <i class="ti-link"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Item -->
+      <div class="s-portfolio__item cbp-item  android">
+        <div class="s-portfolio__img-effect">
+          <img src="img/project/coming.png" alt="Project Image">
+        </div>
+        <div class="s-portfolio__caption-hover--cc">
+          <div class="g-margin-b-25--xs">
+            <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Coming Soon</h4>
+            <p class="g-color--white-opacity">by æternity ekiti</p>
+          </div>
+          <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
+            <li class="list-inline-item">
+              <a href="img/project/coming.png" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle" data-title="Coming Soon <br/> by æternity ekiti">
+                <i class="ti-fullscreen"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="" class="s-icon s-icon--sm s-icon s-icon--white-bg g-radius--circle">
+                <i class="ti-link"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- End Item -->
+    </div>
+    <!-- End Project Gallery -->
+  </div>
+  <!-- End Project -->
+  <!-- Clients -->
+  <div class="g-bg-color--white">
+    <div class="g-container--md g-padding-y-80--xs g-padding-y-125--sm">
+      <div class="g-text-center--xs g-margin-b-40--xs">
+        <h2 class="g-font-size-32--xs g-font-size-36--md">Our Well Wishers</h2>
+      </div>
+      <!-- Swiper Clients -->
+      <div class="s-swiper js__swiper-clients">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".1s">
+              <a href="https://www.eksu.edu.ng/" target="_blank">
+                <img class="s-clients" src="img/wishers/eksu.png" alt="EKSU logo">
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".1s">
+              <a href="https://aeternity.com/" target="_blank">
+                <img class="s-clients" src="img/wishers/aeternity.png" width="120" alt="æternity Logo">
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".1s">
+              <a href="https://dacade.org" target="_blank">
+                <img class="s-clients" src="img/wishers/dacade.jpg" width="120" alt="dacade Logo">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Swiper Clients -->
+    </div>
+  </div>
+  <!-- End Clients -->
+  <!-- News -->
+  <div class="container g-padding-y-80--xs g-padding-y-125--sm" id="blog">
+    <div class="g-text-center--xs g-margin-b-80--xs">
+      <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-25--xs">Events / Blog</p>
+      <h2 class="g-font-size-32--xs g-font-size-36--md">Latest Updates</h2>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 g-margin-b-30--xs g-margin-b-0--md">
+        <article>
+          <img class="img-responsive blog-img" src="img/blog/1.png" alt="Blog 1">
+          <div class="g-bg-color--white g-box-shadow__dark-lightest-v2 g-text-center--xs g-padding-x-40--xs g-padding-y-40--xs">
+            <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2">Project News</p>
+            <h3 class="g-font-size-22--xs g-letter-spacing--1">
+              <a href="https://steemit.com/aeternityblockchain/@emmanueljet/submission-aeternity-development-101" target="_blank">Submission - Aeternity Development 101</a>
+            </h3>
+            <p>I created a site for my school mimicking the official portal site (https://eksueportal.eksu.edu.ng) but modifying it payment structure by implementing decentralized method of payment. I created a platform where students of Ekiti State University don't have to face the problem of going to the bank to queue for 3hrs just to pay by eliminating the middle man (banks) and making the payment in a decentralized way through the means of Aeternity Smart Contract. <a href="https://steemit.com/aeternityblockchain/@emmanueljet/submission-aeternity-development-101" target="_blank">Read More....</a></p>
+          </div>
+        </article>
+      </div>
+      <div class="col-sm-4 g-margin-b-30--xs g-margin-b-0--md">
+        <article>
+          <img class="img-responsive blog-img" src="img/blog/2.png" alt="Blog 2">
+          <div class="g-bg-color--white g-box-shadow__dark-lightest-v2 g-text-center--xs g-padding-x-40--xs g-padding-y-40--xs">
+            <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2">Meetup News</p>
+            <h3 class="g-font-size-22--xs g-letter-spacing--1">
+              <a href="https://steemit.com/aeternity-meetup/@barineka/ekiti-state-university-blockchain-meetup-aeternity-development">Ekiti State University Blockchain meetup/Aeternity development</a>
+            </h3>
+            <p>Æternity is a new blockchain technology, designed to deliver unmatched efficiency, transparent governance and global scalability. We believe in relentless evolution of systems and societies. æternity will push the boundaries of innovation and make blockchain technology ready for mass adoption. <a href="https://steemit.com/aeternity-meetup/@barineka/ekiti-state-university-blockchain-meetup-aeternity-development" target="_blank">Read More....</a></p>
+          </div>
+        </article>
+      </div>
+      <div class="col-sm-4">
+        <article>
+          <img class="img-responsive blog-img" src="img/aeternity.png" alt="Blog 3">
+          <div class="g-bg-color--white g-box-shadow__dark-lightest-v2 g-text-center--xs g-padding-x-40--xs g-padding-y-40--xs">
+              <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2">æternity news</p>
+              <h3 class="g-font-size-22--xs g-letter-spacing--1">
+                  <a href="https://forum.aeternity.com/t/week-22-aeternity-protocol-development-update/3638" target="_blank"># Week #22 - Aeternity Protocol Development Update</a>
+              </h3>
+              <p>Stratum team was focused on end-to-end integration testing. It resulted in stabilisation of connection handling of the mining libs and working dev version of payment contract. Also, we refined simulating various components and we can further improve testing. <a href="https://forum.aeternity.com/t/week-22-aeternity-protocol-development-update/3638" target="_blank">Read More....</a></p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+  <!-- End News -->
+  <!-- Feedback Form -->
+  <div class="g-bg-color--sky-light" id="contact">
+    <div class="container g-padding-y-80--xs g-padding-y-125--sm">
+      <div class="g-text-center--xs g-margin-b-80--xs">
+        <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-25--xs">Feedback?</p>
+      </div>
+      <form id="firebaseContactForm" action="#contactModal" method="post">
+        <div class="row g-margin-b-40--xs">
+          <div class="col-sm-6 g-margin-b-20--xs g-margin-b-0--md">
+            <div class="g-margin-b-20--xs">
+              <input type="name" class="form-control s-form-v2__input g-radius--50" id="txtfullname" name="fullname" placeholder="* Full Name" required>
+            </div>
+            <div class="g-margin-b-20--xs">
+              <input type="email" class="form-control s-form-v2__input g-radius--50" id="txtemail"  name="email" placeholder="* Email" required>
+            </div>
+            <input type="tel" class="form-control s-form-v2__input g-radius--50" id="txtphone"  name="phone" placeholder="* Phone" required>
+          </div>
+          <div class="col-sm-6">
+            <textarea id="txtmessage" name="message" class="form-control s-form-v2__input g-radius--10 g-padding-y-20--xs" rows="8" placeholder="* Your message" required></textarea>
+          </div>
+        </div>
+        <div class="g-text-center--xs">
+          <input type="button" class="text-uppercase s-btn s-btn--md s-btn--primary-bg g-radius--50 g-padding-x-80--xs" onclick="submitContactForm()" value="Submit">
+        </div>
+      </form>
+    </div>
+    <div class="modal fade" id="contactModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span id="contactHeading"></span>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p><span id="contactName"></span></p>
+            <p><span id="contactText"></span></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Feedback Form -->
+  <!--========== END PAGE CONTENT ==========-->
+  <!--========== FOOTER ==========-->
+  <footer class="g-bg-color--dark">
+    <!-- Links -->
+    <div class="g-hor-divider__dashed--white-opacity-lightest">
+      <div class="container g-padding-y-80--xs">
+        <div class="row">
+          <div class="col-sm-2 g-margin-b-20--xs g-margin-b-0--md">
+            <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
+              <li>
+                <a class="g-font-size-15--xs g-color--white-opacity" href="#home">Home</a>
+              </li>
+              <li>
+                <a class="g-font-size-15--xs g-color--white-opacity" href="#about">About</a>
+              </li>
+              <li>
+                <a class="g-font-size-15--xs g-color--white-opacity" href="#projects">Projects</a>
+              </li>
+              <li>
+                <a class="g-font-size-15--xs g-color--white-opacity" href="#blog">Blog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-2 g-margin-b-20--xs g-margin-b-0--md">
+            <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
+              <li>
+                <a class="g-font-size-15--xs g-color--white-opacity" href="https://github.com/AeternityEkiti" target="_blank">gitHub</a>
+              </li>
+              <li>
+                <a class="g-font-size-17--xs g-color--white-opacity" href="https://twitter.com/AeternityEkiti" target="_blank">twitter</a>
+              </li>
+              <li>
+                <a class="g-font-size-15--xs g-color--white-opacity" href="https://t.me/joinchat/LHm-UE63UDgw30JmU8EIXQ" target="_blank">telegram</a>
+              </li>
+              <li>
+                <a class="g-font-size-15--xs g-color--white-opacity" href="https://medium.com/@aeternityekiti" target="_blank">medium</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-2 g-margin-b-20--xs g-margin-b-0--md">
+            <ul class="list-unstyled g-ul-li-tb-5--xs g-margin-b-0--xs">
+              <li>
+                <a class="g-font-size-15--xs g-color--white-opacity" href="http://aeternity.com" target="_blank">æternity</a>
+              </li>
+              <li>
+                <a class="g-font-size-15--xs g-color--white-opacity" href="http://forum.aeternity.com" target="_blank">æternity forum</a>
+              </li>
+              <li>
+                <a class="g-font-size-15--xs g-color--white-opacity" href="https://dacade.org" target="_blank">dacade</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-2 col-md-offset-2 col-sm-5 col-sm-offset-1 s-footer__logo g-padding-y-50--xs g-padding-y-0--md">
+            <h3 class="g-font-size-18--xs g-color--white text-uppercase">æternity ekiti</h3>
+            <p class="g-color--white-opacity">Our Vision is to make an impact on the society by giving the best out of what we have, as a team. We think Big and work accordingly. Thus making stuff happen with our team effort, perseverance,and edurance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Links -->
+    <!-- Copyright -->
+    <div class="container g-padding-y-20--xs">
+      <div class="row">
+        <div class="col-md-6">
+          <a href="index.html">
+            <img class="g-width-100--xs g-height-auto--xs" src="img/aeternity.png" alt="æternity ekiti">
+          </a>
+        </div>
+        <div class="col-md-6 text-md-right">
+          <p class="g-font-size-14--xs g-margin-b-0--xs g-color--white-opacity-light">Made with <i class="fa fa-heart text-danger"></i> by <a href="https://emmanueljet.me" target="_blank">Emmanuel Joseph (Jet)</a> for æternity ekiti</p>
+        </div>
+      </div>
+    </div>
+    <!-- End Copyright -->
+  </footer>
+  <!--========== END FOOTER ==========-->
+
+  <!-- Back To Top -->
+  <a href="javascript:void(0);" class="s-back-to-top js__back-to-top"></a>
+
+  <!--========== JAVASCRIPTS ==========-->
+  <script type="text/javascript" src="js/contact.js"></script>
+
+  <!-- Vendor -->
+  <script type="text/javascript" src="vendor/jquery.min.js"></script>
+  <script type="text/javascript" src="vendor/jquery.migrate.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="vendor/jquery.smooth-scroll.min.js"></script>
+  <script type="text/javascript" src="vendor/jquery.back-to-top.min.js"></script>
+  <script type="text/javascript" src="vendor/scrollbar/jquery.scrollbar.min.js"></script>
+  <script type="text/javascript" src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script type="text/javascript" src="vendor/swiper/swiper.jquery.min.js"></script>
+  <script type="text/javascript" src="vendor/waypoint.min.js"></script>
+  <script type="text/javascript" src="vendor/counterup.min.js"></script>
+  <script type="text/javascript" src="vendor/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+  <script type="text/javascript" src="vendor/jquery.parallax.min.js"></script>
+  <script type="text/javascript" src="vendor/jquery.wow.min.js"></script>
+
+  <!-- General Components and Settings -->
+  <script type="text/javascript" src="js/global.min.js"></script>
+  <script type="text/javascript" src="js/components/header-sticky.min.js"></script>
+  <script type="text/javascript" src="js/components/scrollbar.min.js"></script>
+  <script type="text/javascript" src="js/components/magnific-popup.min.js"></script>
+  <script type="text/javascript" src="js/components/swiper.min.js"></script>
+  <script type="text/javascript" src="js/components/counter.min.js"></script>
+  <script type="text/javascript" src="js/components/portfolio-3-col.min.js"></script>
+  <script type="text/javascript" src="js/components/parallax.min.js"></script>
+  <script type="text/javascript" src="js/components/wow.min.js"></script>
+  <!--========== END JAVASCRIPTS ==========-->
+
+  <script>
+  function event_advertisement()
+  {
+      $('#eventModal').modal('show');
+  }
+  </script>
+
+</body>
+<!-- End Body -->
+</html>
